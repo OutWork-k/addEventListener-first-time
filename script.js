@@ -7,15 +7,18 @@ let num = 0
 firstbtn.addEventListener("click", () => {
     num++
     span.innerText = num
+    if (num) {
+      span.style.color = "green"
+    }
 })
 
 secondbtn.addEventListener("click", () => {
     if (num > 0) {
      num--
     span.innerText = num
+    span.style.color = "red"
     }
 })
-
 
 
 const coordinatesElem = document.querySelector(".coordinates");
